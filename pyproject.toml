@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "novel_tl_models"
+version = "0.1.0"
+description = ""
+authors = ["Joseph Chen <jchen42703@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+transformers = "^4.18.0"
+pydantic = "^1.9.0"
+torch = "^1.11.0"
+sentencepiece = "^0.1.96"
+boto3 = "^1.21.40"
+botocore = "^1.24.43"
+pyquery = "^1.4.3"
+optimum = "^1.1.0"
+gdown = "^4.4.0"
+datasets = "^2.1.0"
+tqdm = "^4.64.0"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.13.5"
+yapf = "^0.32.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
