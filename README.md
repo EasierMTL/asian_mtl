@@ -32,4 +32,7 @@ python ./scripts/evaluate.py
 
 # evaluate quantized
 python ./scripts/evaluate_quantized.py
+
+# Running with CLI and config
+python ./scripts/evaluation/eval.py -c ./scripts/evaluation/configs/helsinki.yaml
 ```
