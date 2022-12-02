@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "asian_mtl"
 version = "0.1.1"
-description = "Seamlessly translate your novels with deep learning models."
+description = "Seamlessly translate East Asian texts with deep learning models."
 authors = ["Joseph Chen <jchen42703@gmail.com>"]
 repository = "https://github.com/EasierMTL/asian_mtl"
 readme = "README.md"
