@@ -28,19 +28,20 @@ class EvaluationPipeline:
 
     @track
     def load_dset(self, dset_path: str):
-        """Loads the dataset
+        """Reads and preprocesses the dataset from the text file. It then parses
+        the Chinese and English text pairs into separate lists.
         """
         with open(dset_path, "r", encoding="utf-8") as f:
             lines = f.readlines()
         # print(lines)
-        print(len(lines))
+        # print(len(lines))
         # Get rid of all white space
         newLines = []
         for line in lines:
             if not (line == "\n"):
                 newLines.append(line.strip())
 
-        print("Removed whitespace: ", len(newLines))
+        # print("Removed whitespace: ", len(newLines))
         # Translation format:
         # - 1 Chinese sentence
         # - 2 reference english translations
@@ -53,7 +54,7 @@ class EvaluationPipeline:
             self.test_ch.append(ch_line)
             self.test_labels.append(eng_labels)
             i += 3
-        print("Num test samples: ", len(self.test_ch), len(self.test_labels))
+        # print("Num test samples: ", len(self.test_ch), len(self.test_labels))
 
         print("Example batch:\n", self.test_ch[0], self.test_labels[0])
 
