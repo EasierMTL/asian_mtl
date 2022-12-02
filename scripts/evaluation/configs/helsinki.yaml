@@ -1,0 +1,12 @@
+# Huggingface model name
+model: "Helsinki-NLP/opus-mt-zh-en"
+chinese_to_english: True
+# Change to False to test the regular model.
+quantized: True
+# Arguments for EvaluationPipeline.evaluate()
+run:
+  num_samples_to_test: 100
+  # num_samples_to_test: 1000
+  num_workers: 4
+  sentence_bleu: False
+  print_bleu_every: 100
