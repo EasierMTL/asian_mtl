@@ -19,3 +19,17 @@ poetry env list
 
 poetry install
 ```
+
+## Evaluation
+
+See [`scripts`](./scripts) for evaluation scripts.
+
+To run the scripts, simply run:
+
+```bash
+# regular
+python ./scripts/evaluate.py
+
+# evaluate quantized
+python ./scripts/evaluate_quantized.py
+```

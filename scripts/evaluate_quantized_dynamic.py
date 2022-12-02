@@ -1,7 +1,6 @@
 import torch
 from novel_tl_models.models.base import ChineseToEnglishTranslator
 from novel_tl_models.evaluation.evaluation_pipeline import EvaluationPipeline
-from novel_tl_models.models.load import download_model, model_params
 
 if __name__ == "__main__":
     from datetime import datetime, timedelta
