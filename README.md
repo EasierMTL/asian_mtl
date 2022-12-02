@@ -14,6 +14,14 @@ All translators support dynamic quantization! [Our benchmarks](#benchmarks) indi
 ## Getting Started
 
 ```bash
+pip install asian_mtl
+```
+
+And you're good to go!
+
+If you are contributing, run:
+
+```bash
 # https://stackoverflow.com/questions/59882884/vscode-doesnt-show-poetry-virtualenvs-in-select-interpreter-option
 
 poetry config virtualenvs.in-project true
