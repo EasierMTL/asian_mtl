@@ -1,8 +1,8 @@
 from multiprocessing import Lock
 from multiprocessing.pool import ThreadPool
 from datasets import load_metric
-from novel_tl_models.models.base import Predictor
-from novel_tl_models.evaluation.debug_memory import track
+from asian_mtl.models.base import Predictor
+from asian_mtl.evaluation.debug_memory import track
 from tqdm import tqdm
 import json
 

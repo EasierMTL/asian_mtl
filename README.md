@@ -1,4 +1,4 @@
-# `novel_tl_models`
+# `asian_mtl`
 
 This repository contains the code and documentation for the machine translation models used for EasierMTL's API.
 

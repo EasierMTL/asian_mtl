@@ -5,8 +5,8 @@ import yaml
 from dataclasses import dataclass
 from dacite import from_dict
 from datetime import datetime, timedelta
-from novel_tl_models.models.base import ChineseToEnglishTranslator, Predictor
-from novel_tl_models.evaluation.evaluation_pipeline import EvaluationPipeline
+from asian_mtl.models.base import ChineseToEnglishTranslator, Predictor
+from asian_mtl.evaluation.evaluation_pipeline import EvaluationPipeline
 
 
 @dataclass
