@@ -1,6 +1,6 @@
 # `novel_tl_models`
 
-This repository contains the code and documentation for the models used for EasierMTL's API.
+This repository contains the code and documentation for the machine translation models used for EasierMTL's API.
 
 Improved version of the models in the original repository: [EasierMTL/chinese-translation-app](https://github.com/EasierMTL/chinese-translation-app/tree/main/server/chinese_translation_api)
 
