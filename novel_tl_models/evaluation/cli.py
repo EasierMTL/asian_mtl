@@ -34,10 +34,13 @@ class EvaluationRunner():
     """Runs EvaluationPipeline with command line arguments.
     """
 
-    def initialize_translator(self):
+    def initialize_translator(self, quantize: bool = True):
         """Initializes the translator with the desired model type.
         """
         translator = ChineseToEnglishTranslator()
+        if quantize:
+            translator.quantize()
+
         return translator
 
     def initialize_pipeline(self, translator: Predictor):
