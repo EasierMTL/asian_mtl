@@ -14,7 +14,22 @@ All translators support dynamic quantization! [Our benchmarks](#benchmarks) indi
 ## Getting Started
 
 ```bash
-pip install asian_mtl
+pip install asian-mtl
+```
+
+Here's a simple example:
+
+```python
+from asian_mtl.models.base import ChineseToEnglishTranslator
+
+translator = ChineseToEnglishTranslator()
+# Quantize for better CPU production performance!
+translator.quantize()
+
+prediction = translator.predict("我爱ECSE484.")
+print(prediction)
+# prediction will be:
+# "I love ECSE 484."
 ```
 
 And you're good to go!
