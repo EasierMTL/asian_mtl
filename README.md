@@ -27,12 +27,8 @@ See [`scripts`](./scripts) for evaluation scripts.
 To run the scripts, simply run:
 
 ```bash
-# regular
-python ./scripts/evaluate.py
-
-# evaluate quantized
-python ./scripts/evaluate_quantized.py
-
-# Running with CLI and config
+# Running with CLI and config with BERT
 python ./scripts/evaluation/eval.py -c ./scripts/evaluation/configs/helsinki.yaml
 ```
+
+Change the config [`helsinki.yaml`](./scripts/evaluation/configs/helsinki.yaml) to use quantized or your specific use case.
