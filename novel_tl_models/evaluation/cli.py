@@ -112,7 +112,7 @@ class EvaluationRunner():
         config_path = self.read_args()
         config = self.parse_config(config_path)
         print(f"Using configuration {config_path}:\n", config)
-        translator = self.initialize_translator()
+        translator = self.initialize_translator(config.quantized)
         pipeline = self.initialize_pipeline(translator)
 
         # Actually runs the evalation
