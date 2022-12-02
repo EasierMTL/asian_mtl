@@ -1,5 +1,6 @@
-import os
 import argparse
+import os
+import torch
 import yaml
 from dataclasses import dataclass
 from dacite import from_dict
@@ -108,6 +109,7 @@ class EvaluationRunner():
         return config
 
     def run(self):
+        torch.set_num_threads(1)
         # Setup
         config_path = self.read_args()
         config = self.parse_config(config_path)
