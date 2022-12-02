@@ -172,6 +172,17 @@ optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
+name = "dacite"
+version = "1.6.0"
+description = "Simple creation of data classes from dictionaries."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.extras]
+dev = ["pytest (>=5)", "pytest-cov", "coveralls", "black", "mypy", "pylint"]
+
+[[package]]
 name = "datasets"
 version = "2.1.0"
 description = "HuggingFace community-driven open-source library of datasets"
@@ -896,7 +907,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d4b80f37dc82ec19deaf9c2c3113e6aef95eeca976a1001a631da955a1e178a0"
+content-hash = "e4da0810dbdcebafdb9e8e7bf835aa1a51e2eec3c21d2ddf8e0ef2434c8ed66f"
 
 [metadata.files]
 aiohttp = [
@@ -1025,6 +1036,7 @@ cssselect = [
     {file = "cssselect-1.1.0-py2.py3-none-any.whl", hash = "sha256:f612ee47b749c877ebae5bb77035d8f4202c6ad0f0fc1271b3c18ad6c4468ecf"},
     {file = "cssselect-1.1.0.tar.gz", hash = "sha256:f95f8dedd925fd8f54edb3d2dfb44c190d9d18512377d3c1e2388d16126879bc"},
 ]
+dacite = []
 datasets = [
     {file = "datasets-2.1.0-py3-none-any.whl", hash = "sha256:7c186041abb980066bff4482037f41e302741bad4709885b2417569f2f6bac3a"},
     {file = "datasets-2.1.0.tar.gz", hash = "sha256:d2bf81085a07ccbf739a92de9da41822f2979d4352dfdcadb3ec35eeef6cd1ef"},
